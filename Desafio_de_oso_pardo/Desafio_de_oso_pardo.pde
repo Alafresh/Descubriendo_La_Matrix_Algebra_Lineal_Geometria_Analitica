@@ -3,12 +3,13 @@ size(600,600);
 background(225);
 
 noStroke();
-float x = 200;
-float y = 200;
+float x = 300;
+float y = 300;
 float faceSize = 160;
 
 //Orejas
 float earSize=faceSize*1/2;
+print(earSize);
 fill(89, 52, 17);
 ellipse(x-faceSize*2/5, y-faceSize*2/5, earSize, earSize);
 ellipse(x+faceSize*2/5, y-faceSize*2/5, earSize, earSize);
@@ -19,8 +20,8 @@ ellipse(x, y, faceSize, faceSize);
 
 //Ojos
 fill(0, 0, 0);
-ellipse(160, 180, 20, 20);
-ellipse(240, 180, 20, 20);
+ellipse(x - faceSize*2/7, y - 20, earSize-60, earSize-60);
+ellipse(x + faceSize*2/7, y - 20, earSize-60, earSize-60);
 
 //Naríz
 fill(89, 52, 20);
