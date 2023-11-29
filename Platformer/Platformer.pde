@@ -53,11 +53,11 @@ void keyPressed() {
   if (key == ' ' && enElSuelo) {
     velocidadY = -10;  // Cambia el valor según sea necesario
   }
-  if(key == 'D' || key == 'd' && enElSuelo)
+  if(key == 'D' || key == 'd')
   {
      jugadorX += velocidadX;
   }
-  if(key == 'A' || key == 'a' && enElSuelo)
+  if(key == 'A' || key == 'a')
   {
      jugadorX -= velocidadX;
   }
