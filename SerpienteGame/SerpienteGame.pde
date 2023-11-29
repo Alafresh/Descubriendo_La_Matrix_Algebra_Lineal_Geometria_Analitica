@@ -26,7 +26,7 @@ void setup() {
 
 // funcion que se llama continuamente para pintar el lienzo
 void draw() {
-  background(51);
+  background(#a6c3ff);
   
   dibujarSerpiente();
   dibujarFruta();
@@ -75,17 +75,17 @@ void dibujarSerpiente() {
   // Dibuja cada segmento de la cola de la serpiente.
   // Itera sobre la lista 'serpiente' y dibuja un rectángulo para cada segmento.
   for (PVector segmento : serpiente) {
-    fill(255);
+    fill(#22ba00);
     rect(segmento.x, segmento.y, tamanoSerpiente, tamanoSerpiente);
   }
   // Dibuja la cabeza de la serpiente.
   // Después de dibujar la cola, dibuja la cabeza en la posición actual 'pos'.
-  fill(255);
+  fill(#22ba00);
   rect(pos.x, pos.y, tamanoSerpiente, tamanoSerpiente);
 }
 
 void dibujarFruta() {
-  fill(255, 0, 0);
+  fill(#FF6100);
   ellipse(frutaX + tamanoSerpiente / 2, frutaY + tamanoSerpiente / 2, tamanoSerpiente, tamanoSerpiente);
 }
 
